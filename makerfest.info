@@ -1,3 +1,11 @@
 name = Makerfest
 description = Theme for Makerfest 2015 website. Theme build for Drupal 7. Theme developed by Ujval Joshi.
 core = 7.x
+
+; CSS Files
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/bootstrap-theme.min.css
+stylesheets[all][] = css/app.css
+
+; Javascript Files
+scripts[] = js/bootstrap.min.js
