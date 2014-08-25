@@ -61,6 +61,31 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   
+  <footer class="container">    
+      <div class="col-lg-4">
+      </div>
+      
+      <div class="col-lg-4 mjff">
+        <a href="http://motwanijadeja.org">
+          <img src="sites/all/themes/makerfest/images/mjff-small.png">  
+        </a>        
+        <p>Motwani Jadeja Family Foundation</p>
+      </div>
+      
+      <div class="col-lg-4">
+        <p style="text-align:right">
+          <a href="#">
+            <img src="sites/all/themes/makerfest/images/designer.png">
+          </a>
+          
+          <a href="http://ujvaljoshi.com" target="_blank">
+            <img src="sites/all/themes/makerfest/images/code.png">
+          </a>
+        </p>
+      </div>
+    
+  </footer>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <?php print $scripts; ?>

@@ -111,7 +111,7 @@
     </header>
     
     
-    
+  <?php if ($front_page): ?>  
     <section class="slider">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -125,13 +125,13 @@
           <div class="item active">
             <img src="http://placekitten.com/1200/500" alt="Slide1" />
             <div class="carousel-caption">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             </div>
           </div>
           <div class="item">
             <img src="http://placekitten.com/1200/500" alt="Slide1" />
             <div class="carousel-caption">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             </div>
           </div>
           
@@ -139,7 +139,7 @@
       
         <!-- Controls -->
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
+         <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
         <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
@@ -188,33 +188,40 @@
           <li>Agriculture</li>
         </ul>
       </div>
-    </section> 
+    </section>
     
-  </div>
-  
-  <div id="page-wrapper"><div id="page">
-
-    <div id="header"><div class="section clearfix">
-
-      <?php print render($page['header']); ?>
-
-    </div></div> <!-- /.section, /#header -->
-
-    <?php if ($main_menu || $secondary_menu): ?>
-      <div id="navigation"><div class="section">
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
-        <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
-      </div></div> <!-- /.section, /#navigation -->
-    <?php endif; ?>
-
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-    <?php endif; ?>
-
-    <?php print $messages; ?>
-
-    <div id="main-wrapper"><div id="main" class="clearfix">
-
+    <section class="social"> 
+      <div class="row">
+        <div class="col-md-8">
+          <?php print render($page['first_footer']); ?>
+        </div>
+        
+        <div class="col-md-4">
+          <h2 class="get-updated">Get Updated</h2>
+          <hr>
+          <div class="social-link">
+            <a href="https://www.facebook.com/makerfest" target="_blank">
+              <img src="sites/all/themes/makerfest/images/fb.png"> Facebook
+            </a>
+          </div>
+          
+          <div class="social-link">
+            <a href="https://twitter.com/makerfestmjff" target="_blank">
+              <img src="sites/all/themes/makerfest/images/twitter.png"> Twitter  
+            </a>            
+          </div>
+          
+          <div class="social-link">
+            <a href="https://www.youtube.com/channel/UChb0vqIP7inaobXo3m2UMtA" target="_blank">
+              <img src="sites/all/themes/makerfest/images/youtube.png"> Youtube
+            </a>            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <?php endif; ?>  
+    <?php if (!$front_page): ?>
       <div id="content" class="column"><div class="section">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
         <a id="main-content"></a>
@@ -227,23 +234,6 @@
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
       </div></div> <!-- /.section, /#content -->
+    <?php endif; ?>
 
-      <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_first']); ?>
-        </div></div> <!-- /.section, /#sidebar-first -->
-      <?php endif; ?>
-
-      <?php if ($page['sidebar_second']): ?>
-        <div id="sidebar-second" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_second']); ?>
-        </div></div> <!-- /.section, /#sidebar-second -->
-      <?php endif; ?>
-
-    </div></div> <!-- /#main, /#main-wrapper -->
-
-    <div id="footer"><div class="section">
-      <?php print render($page['footer']); ?>
-    </div></div> <!-- /.section, /#footer -->
-
-  </div></div> <!-- /#page, /#page-wrapper -->
+  </div>
