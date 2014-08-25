@@ -72,36 +72,129 @@
  * @ingroup themeable
  */
 ?>
-
+  <div class="page-wrapper container">
+    <header>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<?php print $front_page; ?>"title="<?php print t('Home'); ?>" rel="home" id="logo">
+              <?php if ($logo): ?>            
+                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />                
+              <?php endif; ?>
+            </a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                        
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recap <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Makerfest 2014</a></li>                  
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    
+    
+    
+    <section class="slider">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>          
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="http://placekitten.com/1200/500" alt="Slide1" />
+            <div class="carousel-caption">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="http://placekitten.com/1200/500" alt="Slide1" />
+            <div class="carousel-caption">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          
+        </div>
+      
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </section>
+    
+    <section class="icons">
+      <h1 class="hobo">What will you make?</h1>
+      <div class="col-xs-6 col-sm-3">
+        <img src="sites/all/themes/makerfest/images/technology.png">
+        <ul>
+          <li>Technology</li>
+          <li>Science</li>
+          <li>Engineering</li>
+          <li>Applications</li>
+        </ul>
+      </div>
+      
+      <div class="col-xs-6 col-sm-3">
+        <img src="sites/all/themes/makerfest/images/hacker.png">
+        <ul>
+          <li>Hacker</li>
+          <li>Gaming</li>
+          <li>Robotics</li>
+          <li>DIY</li>
+        </ul>
+      </div>
+      
+      <div class="col-xs-6 col-sm-3">
+        <img src="sites/all/themes/makerfest/images/design.png">
+        <ul>
+          <li>Design</li>
+          <li>Music</li>
+          <li>Craft</li>
+          <li>Art</li>
+        </ul>
+      </div>
+      
+      <div class="col-xs-6 col-sm-3">
+        <img src="sites/all/themes/makerfest/images/social.png">
+        <ul>
+          <li>Social</li>
+          <li>Green &amp; Cleantech</li>
+          <li>Recycling</li>
+          <li>Agriculture</li>
+        </ul>
+      </div>
+    </section> 
+    
+  </div>
+  
   <div id="page-wrapper"><div id="page">
 
     <div id="header"><div class="section clearfix">
-
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
-
-      <?php if ($site_name || $site_slogan): ?>
-        <div id="name-and-slogan">
-          <?php if ($site_name): ?>
-            <?php if ($title): ?>
-              <div id="site-name"><strong>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </strong></div>
-            <?php else: /* Use h1 when the content title is empty */ ?>
-              <h1 id="site-name">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </h1>
-            <?php endif; ?>
-          <?php endif; ?>
-
-          <?php if ($site_slogan): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
-          <?php endif; ?>
-        </div> <!-- /#name-and-slogan -->
-      <?php endif; ?>
 
       <?php print render($page['header']); ?>
 

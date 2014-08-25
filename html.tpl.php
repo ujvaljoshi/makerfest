@@ -49,8 +49,9 @@
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
   <?php print $styles; ?>
-  <?php print $scripts; ?>
+  
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
@@ -59,5 +60,10 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <?php print $scripts; ?>
 </body>
+
 </html>
