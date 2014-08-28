@@ -94,14 +94,14 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                        
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="<?php print $front_page; ?>">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/contact">Contact</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recap <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Makerfest 2014</a></li>                  
+                  <li><a href="/maker-fest-2014">Makerfest 2014</a></li>                  
                 </ul>
               </li>
             </ul>
@@ -111,7 +111,7 @@
     </header>
     
     
-  <?php if ($front_page): ?>  
+  <?php if(drupal_is_front_page()): ?>  
     <section class="slider">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -123,13 +123,13 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="http://placekitten.com/1200/500" alt="Slide1" />
+            <img src="sites/all/themes/makerfest/images/red-bg.jpg" alt="Slide1" />
             <div class="carousel-caption">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             </div>
           </div>
           <div class="item">
-            <img src="http://placekitten.com/1200/500" alt="Slide1" />
+            <img src="sites/all/themes/makerfest/images/yellow-bg.jpg" alt="Slide1" />
             <div class="carousel-caption">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
             </div>
@@ -221,7 +221,7 @@
     </section>
     
   <?php endif; ?>  
-    <?php if (!$front_page): ?>
+    <?php if(!drupal_is_front_page()): ?>
       <div id="content" class="column"><div class="section">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
         <a id="main-content"></a>

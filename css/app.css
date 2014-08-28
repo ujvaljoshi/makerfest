@@ -1,6 +1,7 @@
 /* Global Style */
 
 body {
+  border-top: 3px #ffba04 solid;
   background-color: #dedede;
   font-family: "Roboto", sans-serif;
 }
