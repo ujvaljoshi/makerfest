@@ -117,7 +117,7 @@
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>          
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>                 
         </ol>
       
         <!-- Wrapper for slides -->
@@ -125,7 +125,14 @@
           <div class="item active">
             <img src="sites/all/themes/makerfest/images/red-bg.jpg" alt="Slide1" />
             <div class="carousel-caption">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              <h3>Who is Makerfest?</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#" class="btn">Watch Video</a>
             </div>
           </div>
           <div class="item">
