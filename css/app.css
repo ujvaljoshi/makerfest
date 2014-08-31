@@ -35,6 +35,10 @@ p {
   text-align: center;
 }
 
+.region-content {
+  padding-bottom: 3em;
+}
+
 /* Navbar Style */
 
 .navbar {
@@ -86,6 +90,21 @@ p {
 
 .btn-fest:hover {
   color: #ffba04;
+}
+
+.apply-btn {
+  border: 1px solid #d6412a;
+  color: #d6412a !important;
+  border-radius: 0.5em;
+}
+
+.apply-btn a {
+  color: #d6412a !important;
+}
+
+.apply-btn a:hover {
+  background-color: #d6412a !important;
+  color: white !important;
 }
 
 
@@ -166,6 +185,7 @@ footer {
   background-color: #404040;
   padding-top: 25px;
   color: white;
+  
 }
 
 .mjff {

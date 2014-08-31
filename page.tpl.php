@@ -104,6 +104,7 @@
                   <li><a href="/maker-fest-2014">Makerfest 2014</a></li>                  
                 </ul>
               </li>
+              <li class="apply-btn"><a href="/apply">Apply Now</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -135,7 +136,7 @@
             <div class="carousel-caption">
               <h3>Makerfest 2015</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a href="#" class="btn btn-fest"> <span class="glyphicon glyphicon-ok"></span> Apply Now</a>
+              <a href="/apply" class="btn btn-fest"> <span class="glyphicon glyphicon-ok"></span> Apply Now</a>
             </div>
           </div>
           
@@ -226,6 +227,7 @@
     
   <?php endif; ?>  
     <?php if(!drupal_is_front_page()): ?>
+      <hr class="main-line">
       <div id="content" class="column"><div class="section">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
         <a id="main-content"></a>
