@@ -178,3 +178,31 @@ footer {
 footer p {
   font-size: 14px;
 }
+
+/* Views page */
+
+.view-display-id-page .views-row-last {
+  margin-bottom: 5em !important;
+}
+
+.view-display-id-page .views-row {
+  padding: 1em;
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+  border-radius: 20px;
+}
+
+.view-display-id-page .views-row .views-field-title a {
+  font-size: 1.4em;
+  display: block;
+  min-height: 2.8em;
+}
+
+.view-display-id-page .views-field-field-banner {
+  display: block;
+  float: left;
+}
+
+.view-display-id-page .views-field-field-banner img {
+  margin: 0em 1em 0 1em;
+}
