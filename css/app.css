@@ -60,6 +60,35 @@ p {
   border: none;
 }
 
+
+/* Slider */
+.slider h3 {
+  font-size: 4em;
+  font-weight: bolder;
+  font-family: 'Hobo Std', sans-serif;
+}
+
+.slider .btn {
+  font-size: 1.5em;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+
+.slider .btn:hover {
+  background-color: white;
+}
+
+.btn-video:hover {
+  color: #d6412a;
+}
+
+.btn-fest:hover {
+  color: #ffba04;
+}
+
+
 /* icons */
 
 .icons {
@@ -125,6 +154,10 @@ Footer Blocks
 }
 
 
+/* Footer Block */
+#block-views-blog-block-1 {
+  padding: 1em 2em;
+}
 
 
 /* Footer */

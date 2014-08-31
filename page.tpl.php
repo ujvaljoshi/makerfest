@@ -126,19 +126,16 @@
             <img src="sites/all/themes/makerfest/images/red-bg.jpg" alt="Slide1" />
             <div class="carousel-caption">
               <h3>Who is Makerfest?</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a href="#" class="btn">Watch Video</a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#" class="btn btn-video"> <span class="glyphicon glyphicon-play"></span> Watch Video</a>
             </div>
           </div>
           <div class="item">
             <img src="sites/all/themes/makerfest/images/yellow-bg.jpg" alt="Slide1" />
             <div class="carousel-caption">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              <h3>Makerfest 2015</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#" class="btn btn-fest"> <span class="glyphicon glyphicon-ok"></span> Apply Now</a>
             </div>
           </div>
           
@@ -200,7 +197,7 @@
     <section class="social"> 
       <div class="row">
         <div class="col-md-8">
-          <?php print render($page['first_footer']); ?>
+          <?php print render($page['footer_first']); ?>
         </div>
         
         <div class="col-md-4">
